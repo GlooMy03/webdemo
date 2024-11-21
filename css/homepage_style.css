@@ -1,0 +1,505 @@
+/* Reset margin/padding untuk navbar */
+.nav {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-nav .logo {
+    font-size: 35px;
+    color: #6c5435;
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  .menu-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-nav a:hover {
+    background-color: #6c5435;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  
+  .right-menu .login {
+    padding: 8px 15px;
+    background-color: #6c5435;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .right-menu .login:hover {
+    background-color: #4a3c26;
+  }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+  }
+  
+  .hero-content p {
+    margin-bottom: 20px;
+    margin-left: 15%;
+    font-size: 35px;
+  }
+  
+  .btn {
+    padding: 20px 50px;
+    background: #6c5435;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15%;
+    font-size: 30px;
+    border-radius: 35px; /* Tambahkan ini untuk sisi melengkung */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi */
+  }
+
+  .btn:hover {
+    background-color: #4a3c26; /* Warna berubah saat hover */
+    transform: scale(1.05); /* Sedikit pembesaran saat hover */
+}
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    padding-right: 40px;
+    
+  }
+  
+  /* Popular Hotels Section */
+  .popular-hotels {
+    padding: 50px 0;
+    background: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.popular-hotels .header {
+    display: flex; /* Flexbox untuk menyusun judul dan tombol "View More" */
+    justify-content: space-between; /* Elemen di kiri dan kanan */
+    align-items: center; /* Sejajarkan secara vertikal */
+    margin-bottom: 20px; /* Beri jarak dengan konten di bawahnya */
+}
+
+.popular-hotels h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Hilangkan margin default */
+}
+
+.view-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff; /* Mengubah warna teks menjadi putih */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px; /* Memberikan padding untuk membuat tombol lebih besar */
+    background-color: #6c5435; /* Warna latar belakang tombol */
+    border-radius: 30px; /* Membuat sudut tombol lebih bulat */
+    transition: all 0.3s ease; /* Animasi transisi untuk semua properti */
+    margin-right: 10px; /* Jarak dari sisi kanan */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover */
+}
+
+.view-more:hover {
+    color: #fff; /* Mengubah warna teks menjadi putih saat hover */ 
+    transform: translateY(-2px); /* Efek tombol terangkat sedikit saat hover */
+}
+
+  /* Hotel Card Section */
+  .hotel-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; /* Jarak antar kartu */
+}
+
+.hotel-card {
+    position: relative;
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Animasi saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px); /* Efek melayang saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat hover */
+}
+
+/* Kotak semi-transparan di belakang */
+.hotel-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Warna semi-transparan */
+    border-radius: 10px;
+    z-index: -1; /* Letakkan di bawah elemen utama */
+    transition: background 0.3s ease; /* Animasi pada hover */
+}
+
+.hotel-card:hover::before {
+    background: #7C6A46; /* Tingkatkan transparansi saat hover */
+}
+
+.hotel-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover img {
+    transform: scale(1.05); /* Perbesar gambar sedikit saat hover */
+}
+
+/* Penataan teks untuk menarik perhatian */
+.hotel-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.hotel-card h3:hover {
+    color: #7C6A46; /* Warna tulisan berubah saat hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan teks */
+}
+
+.hotel-card p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.hotel-card p:hover {
+    color: #7C6A46; /* Warna teks berubah saat hover */
+}
+
+.hotel-card span {
+    font-size: 1rem;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/*luxury room */
+.luxurious-rooms {
+    background-color: #7C6A46; /* Warna latar belakang section */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.luxurious-rooms h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.luxurious-rooms p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk container */
+.container-room {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flexbox untuk room-cards */
+.room-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Styling untuk setiap room-card */
+.room-card {
+    position: relative;
+    background-color: #fff;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.room-card:hover {
+    transform: translateY(-10px); /* Efek hover untuk melayang */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar pada room-card */
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling teks pada room-card */
+.room-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsif: untuk ukuran layar kecil */
+@media (max-width: 768px) {
+    .room-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-card {
+        width: 100%;
+    }
+}
+
+/*Fasilitas room */
+/* Styling untuk section fasilitas */
+.fasilitas {
+    padding: 6rem;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Konten fasilitas section */
+.fasilitas-content {
+    margin-bottom: 3rem;
+}
+
+.fasilitas h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.fasilitas p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-fasilitas {
+    padding: 10px 20px;
+    background-color: #7C6A46;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-fasilitas:hover {
+    background-color: #6c583a;
+}
+
+/* Flexbox untuk fasilitas-cards */
+.fasilitas-cards {
+    display: flex;
+    flex-wrap: wrap; /* Membuat card bisa melipat ke baris berikutnya */
+    justify-content: space-between; /* Membuat card tersebar merata */
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Styling untuk fasilitas-card */
+.fasilitas-card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 15%; /* Mengatur lebar card agar 4 card pas dalam satu baris */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fasilitas-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar pada fasilitas card */
+.fasilitas-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.fasilitas-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.fasilitas-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Responsif untuk ukuran layar kecil */
+@media (max-width: 1024px) {
+    .fasilitas-cards {
+        justify-content: center; /* Pusatkan card pada layar lebih kecil */
+    }
+    .fasilitas-card {
+        width: 45%; /* Lebar card 45% pada layar kecil untuk 2 kolom */
+    }
+}
+
+@media (max-width: 768px) {
+    .fasilitas-cards {
+        justify-content: center;
+    }
+    .fasilitas-card {
+        width: 100%; /* Card lebar penuh pada layar sangat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .fasilitas {
+        padding: 4rem 1rem;
+    }
+}
+/* Footer */
+footer {
+    background: #7C6A46;
+    color: white;
+    padding: 4rem 6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Memberikan jarak antara kolom */
+}
+
+.footer-info {
+    width: 40%; /* Memberikan lebar 40% untuk bagian info */
+}
+
+.footer-info .logo-footer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Styling untuk footer links */
+.footer-links {
+    width: 25%; /* Memberikan lebar 25% untuk setiap kolom link */
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 3rem 2rem; /* Mengurangi padding pada layar kecil */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem; /* Memberikan jarak lebih banyak antara kolom */
+    }
+
+    .footer-info, .footer-links {
+        width: 100%; /* Mengatur lebar menjadi 100% pada layar kecil */
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center; /* Menyelaraskan sosial link di tengah */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Mengurangi ukuran font untuk link */
+    }
+}

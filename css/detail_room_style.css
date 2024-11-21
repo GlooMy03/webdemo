@@ -1,0 +1,431 @@
+.nav {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-nav .logo {
+    font-size: 35px;
+    color: #6c5435;
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  .menu-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-nav a:hover {
+    background-color: #6c5435;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  
+  .right-menu .login {
+    padding: 8px 15px;
+    background-color: #6c5435;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .right-menu .login:hover {
+    background-color: #4a3c26;
+  }
+
+/* Detail room */
+.foto-room{
+    padding: 30px 30px;
+}
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/* Left Section */
+.left-section {
+    width: 60%;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1b3824;
+}
+
+.rating {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.rating .score {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.reviews {
+    text-decoration: none;
+    color: #1b74e4;
+}
+
+.location {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+
+/* Right Section */
+.right-section {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.facilities-container, .standard-container {
+    width: 48%; /* Membagi area menjadi dua kolom */
+}
+
+.facilities-title, .standard-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1b3824;
+    margin-bottom: 10px;
+}
+
+.facilities-list, .sonder-list {
+    list-style: none;
+    padding: 0;
+}
+
+.facilities-list li, .sonder-list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.facilities-list span, .sonder-list span {
+    margin-right: 8px;
+}
+
+.more-facilities {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1b74e4;
+}
+/* CTA Button */
+.cta-button {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%; /* Memastikan tombol berada di tengah */
+}
+
+.cta-button button {
+    background-color: #7C6A46;
+    color: #fff;
+    padding: 20px 100px;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
+}
+
+.cta-button button:hover {
+    background-color: #5a472f;
+    transform: scale(1.05); /* Efek hover dengan zoom sedikit */
+    transition: 0.2s ease-in-out; /* Animasi lebih halus */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.container-fasilitas {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-fasilitas {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-fasilitas h1 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.services-fasilitas {
+    background-color: #7C6A46;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.services-header-fasilitas p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.service-icons-fasilitas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.service-icons-fasilitas div {
+    text-align: center;
+    width: 100px;
+}
+
+.service-icons-fasilitas span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.facilities {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.images img {
+    width: calc(50% - 10px); /* Membagi gambar menjadi dua dengan jarak 20px */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+/* SECTION UTAMA */
+.facilities {
+    display: flex;
+    flex-direction: column; /* Elemen disusun secara vertikal */
+    align-items: center; /* Elemen di tengah */
+    gap: 20px; /* Jarak antar elemen */
+    margin: 20px;
+}
+
+/* BAGIAN GAMBAR */
+.facilities .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Gambar di tengah */
+}
+
+.facilities .images img {
+    width: calc(50% - 10px); /* Setiap gambar setengah dari lebar container */
+    border-radius: 8px; /* Sudut gambar melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    object-fit: cover; /* Supaya gambar proporsional */
+}
+
+/* HEADER LIST */
+.header-fasilitasbangunan {
+    display: flex; /* Mengaktifkan fleksibilitas */
+    justify-content: center; /* Menyelaraskan isi ke tengah secara horizontal */
+    align-items: center; /* Menyelaraskan isi ke tengah secara vertikal */
+    margin: 10px 0; /* Jarak atas dan bawah */
+    text-align: center; /* Teks di tengah */
+}
+
+.header-fasilitasbangunan h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin: 0; /* Pastikan margin bawaan dihapus */
+}
+
+
+/* BAGIAN LIST FASILITAS */
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Layout 2 kolom */
+    gap: 15px; /* Jarak antar item */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    width: 100%; /* Penuhi lebar container */
+    max-width: 800px; /* Batas maksimum lebar */
+}
+
+/* ITEM FASILITAS */
+.facility-list div {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+    font-size: 1rem;
+    color: #555;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk setiap item */
+}
+
+.facility-list span {
+    font-size: 1.2rem; /* Ukuran ikon */
+    color: #1b74e4;
+}
+
+.facility-list p {
+    margin: 0; /* Hilangkan margin bawaan */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+  /* Footer */
+footer {
+    background: #7C6A46;
+    color: white;
+    padding: 4rem 6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Memberikan jarak antara kolom */
+}
+
+.footer-info {
+    width: 40%; /* Memberikan lebar 40% untuk bagian info */
+}
+
+.footer-info .logo-footer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Styling untuk footer links */
+.footer-links {
+    width: 25%; /* Memberikan lebar 25% untuk setiap kolom link */
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 3rem 2rem; /* Mengurangi padding pada layar kecil */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem; /* Memberikan jarak lebih banyak antara kolom */
+    }
+
+    .footer-info, .footer-links {
+        width: 100%; /* Mengatur lebar menjadi 100% pada layar kecil */
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center; /* Menyelaraskan sosial link di tengah */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Mengurangi ukuran font untuk link */
+    }
+}

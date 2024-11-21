@@ -1,0 +1,316 @@
+/* Navbar */
+.nav {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+  
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.menu-nav .logo {
+    font-size: 35px;
+    color: #6c5435;
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+}
+  
+.menu {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+  
+.menu-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.menu-nav a:hover {
+    background-color: #6c5435;
+    color: #fff;
+    border-radius: 5px;
+}
+  
+  
+.right-menu .login {
+    padding: 8px 15px;
+    background-color: #6c5435;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+  
+.right-menu .login:hover {
+    background-color: #4a3c26;
+}
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/bgrooms.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 1rem auto 0;
+}
+
+/* Booking Section */
+.booking-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Menambahkan transparansi yang lebih sedikit agar background lebih terang */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+/* Booking Item */
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+/* Teks dalam Booking Item */
+.booking-item .label {
+    font-size: 1rem;
+    color: #333; /* Mengganti warna teks menjadi abu-abu gelap agar lebih terbaca */
+}
+
+/* Dropdown dan Input */
+.booking-item .dropdown {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333; /* Mengatur warna teks dropdown */
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Tombol Check Available */
+.check-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6c5435; /* Warna coklat untuk tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.check-button:hover {
+    background-color: #4a3c26; /* Warna lebih gelap saat hover */
+}
+
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Inputs */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"] {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input Focus */
+.form-group input:focus {
+  border-color: #6c5435;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6c5435;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #6c5435;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem;
+  }
+}
+
+
+  /* Footer */
+  footer {
+    background: #7C6A46;
+    color: white;
+    padding: 4rem 6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Memberikan jarak antara kolom */
+}
+
+.footer-info {
+    width: 40%; /* Memberikan lebar 40% untuk bagian info */
+}
+
+.footer-info .logo-footer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Styling untuk footer links */
+.footer-links {
+    width: 25%; /* Memberikan lebar 25% untuk setiap kolom link */
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 3rem 2rem; /* Mengurangi padding pada layar kecil */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem; /* Memberikan jarak lebih banyak antara kolom */
+    }
+
+    .footer-info, .footer-links {
+        width: 100%; /* Mengatur lebar menjadi 100% pada layar kecil */
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center; /* Menyelaraskan sosial link di tengah */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Mengurangi ukuran font untuk link */
+    }
+}
