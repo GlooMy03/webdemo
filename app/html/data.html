@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mellanova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hotel Mellanova Bookings</h1>
+    <table id="bookingsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Room Type</th>
+                <th>Check-In</th>
+                <th>Check-Out</th>
+                <th>Phone Number</th>
+                <th>Total Rooms</th>
+                <th>Payment Method</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data bookings akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <script>
+        // Mengambil data booking dari API
+        fetch('http://localhost/php_folder_praktikum/Modul_4_Demo/app/php/booking.php')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const bookingsTable = document.getElementById('bookingsTable').querySelector('tbody');
+                const {results} = data;
+                results.forEach(booking => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${booking.full_name}</td>
+                        <td>${booking.email}</td>
+                        <td>${booking.room_type}</td>
+                        <td>${booking.check_in}</td>
+                        <td>${booking.check_out}</td>
+                        <td>${booking.phone_number}</td>
+                        <td>${booking.total_rooms}</td>
+                        <td>${booking.payment_method}</td>
+                    `;
+                    bookingsTable.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>

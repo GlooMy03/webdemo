@@ -192,41 +192,46 @@
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
 }
 
-/* Button */
-button[type="submit"] {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #6c5435;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+/* Style for CRUD buttons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-button[type="submit"]:hover {
-  background-color: #6c5435;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 1.5rem;
-  }
-
-  .form-group label {
-    font-size: 0.9rem;
-  }
-
-  .form-group input {
-    font-size: 0.9rem;
-  }
-
-  button[type="submit"] {
-    font-size: 0.9rem;
-  }
+button:hover {
+    background-color: #007BFF;
+    color: white;
 }
+
+#submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#update-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#read-btn {
+    background-color: #007bff;
+    color: white;
+}
+
 
 
   /* Footer */

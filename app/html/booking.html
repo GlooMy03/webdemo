@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="../css/booking_style.css">
 </head>
 <body>
+    <form action="../php/booking.php" method="POST">
+    <script src="../js/databackend.js" defer></script>
   <!-- Navbar -->
   <nav class="nav">
     <div class="menu-nav">
@@ -34,40 +36,46 @@
     </section>
  <!-- Booking Section -->
  <div class="container">
-    <form action="#">
+    <form action="" method="POST"> <!-- Ubah menjadi POST -->
         <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="name" name="full_name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter email address">
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
         </div>
         <div class="form-group">
             <label for="room-type">Room Type</label>
-            <input type="text" id="room-type" placeholder="Enter room type">
+            <input type="text" id="room-type" name="room_type" placeholder="Enter room type" required>
         </div>
         <div class="form-group">
             <label for="check-in">Check In</label>
-            <input type="date" id="check-in" placeholder="Select check-in date">
+            <input type="date" id="check-in" name="check_in" placeholder="Select check-in date" required>
         </div>
         <div class="form-group">
             <label for="check-out">Check Out</label>
-            <input type="date" id="check-out" placeholder="Select check-out date">
+            <input type="date" id="check-out" name="check_out" placeholder="Select check-out date" required>
         </div>
         <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number">
+            <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number" required>
         </div>
         <div class="form-group">
             <label for="total-room">Total Rooms</label>
-            <input type="number" id="total-room" placeholder="Enter number of rooms">
+            <input type="number" id="total-room" name="total_rooms" placeholder="Enter number of rooms" required>
         </div>
         <div class="form-group">
             <label for="payment-method">Payment Method</label>
-            <input type="text" id="payment-method" placeholder="Enter payment method">
+            <input type="text" id="payment-method" name="payment_method" placeholder="Enter payment method" required>
         </div>
-        <button type="submit" id="submit-btn">Send</button>
+        <div class="button-group">
+            <button type="submit" id="submit-btn">Send</button>
+            <button type="button" id="update-btn">Update</button>
+            <button type="button" id="delete-btn">Delete</button>
+            <button type="button" id="read-btn">Read</button>
+            <button class="btn" onclick="location.href='data.html';">Data Pengunjung</button>
+        </div>
     </form>
 </div>
 
@@ -102,6 +110,7 @@
         </div>
     </div>
 </footer>
-<script src="../js/alert_booking.js" defer></script>
+
+
 </body>
 </html>
